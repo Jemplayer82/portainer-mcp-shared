@@ -3,6 +3,11 @@ name: Build and Push portainer-mcp-shared
 on:
   push:
     branches: [main, master]
+    paths-ignore:
+      - '**.md'
+      - 'LICENSE'
+      - '.gitignore'
+      - 'docs/**'
   workflow_dispatch:
 
 jobs:
