@@ -8,7 +8,7 @@
 # https://github.com/jmrplens/portainer-mcp-enhanced/pull/11). Pinned to a git
 # sha tag, not :latest, so this doesn't silently drift on future fork pushes —
 # bump deliberately.
-FROM ghcr.io/jemplayer82/portainer-mcp-enhanced:87061abcb084 AS upstream
+FROM ghcr.io/jemplayer82/portainer-mcp-enhanced:944ea8022d6f AS upstream
 
 FROM ghcr.io/supercorp-ai/supergateway:latest
 COPY --from=upstream /usr/local/bin/portainer-mcp-enhanced /usr/local/bin/portainer-mcp-enhanced
